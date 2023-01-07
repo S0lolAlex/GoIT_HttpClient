@@ -11,8 +11,6 @@ import java.util.*;
 
 
 public class HttpJsonTest {
-    private final String URL_POST = "https://jsonplaceholder.typicode.com/posts";
-
     public void getUsersList() throws IOException, InterruptedException {
         HttpRequest.BodyPublisher bodyPublisher = HttpRequest.BodyPublishers.noBody();
         HttpResponse<String> response = getResponse("https://jsonplaceholder.typicode.com/users","GET",bodyPublisher);
